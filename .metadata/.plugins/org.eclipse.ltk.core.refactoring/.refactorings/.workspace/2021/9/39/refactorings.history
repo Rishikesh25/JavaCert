@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HibernateXNLway&apos; to &apos;Hibernate_XMLway&apos;" description="Rename resource &apos;HibernateXNLway&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/HibernateXNLway" name="Hibernate_XMLway" stamp="1632319831655" updateReferences="true"/>
+</session>

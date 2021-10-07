@@ -1,0 +1,8 @@
+package com.util;
+
+public class Snippet {
+	public static void main(String[] args) {
+		hibernate-core-5.5.7.Final.jar
+	}
+}
+

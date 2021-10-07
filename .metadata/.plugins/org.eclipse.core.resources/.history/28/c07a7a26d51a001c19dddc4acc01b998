@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+       "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate_mapping package="com.beans" >
+<class name="Student" table="student_data.xml">
+      <id name=roll_no column="Roll_No">
+          <generator name="increment"></generator>
+      </id>
+ <property name="first_name" column="First_name"></property>
+ <property name="last_name" column=Last_name></property>
+ <property name="grade"     column="Grade"  ></property>
+</class>
+
+</hibernate_mapping>

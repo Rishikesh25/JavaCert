@@ -1,0 +1,6 @@
+#Sun Aug 29 22:57:06 IST 2021
+__DEFAULT__=false
+org.eclipse.sdk.Eclipse.master=true
+org.eclipse.sdk.Google.master=true
+org.eclipse.help.ui.localSearch.master=true
+expression=https\://download.jboss.org/jbosstools/photon/stable/updates/

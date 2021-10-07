@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+          "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+          "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">  
+  <hibernate-mapping>
+  
+  <class name = "com.beans.Employee"  table="emp" discriminator-value="emp1">
+  
+  
+  
+  
+  
+  
+  
+  </class>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </hibernate-mapping>        

@@ -1,0 +1,5 @@
+INDEX VERSION 1.130
+E:\New folder\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3896051329.index
+\java-servlets\src\main\resources
+E:\New folder\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2425467010.index
+\jsptags\src

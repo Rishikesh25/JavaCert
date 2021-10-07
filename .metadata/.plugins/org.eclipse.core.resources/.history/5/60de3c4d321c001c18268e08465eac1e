@@ -1,0 +1,28 @@
+package com.beans;
+
+public class Regular_emp extends Employee
+{
+	private float salary;
+	private float bonus;
+	
+
+	public class Regular_emp
+	public class Regular_emp (float salary,float bonus) {
+	
+	}
+	
+	
+	
+	public int getSalary() {
+		return salary;
+	}
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+	public int getBonus() {
+		return bonus;
+	}
+	public void setBonus(int bonus) {
+		this.bonus = bonus;
+	}
+}
