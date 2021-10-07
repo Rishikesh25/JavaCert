@@ -7394,3 +7394,125 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
 	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
 	... 9 more
+
+!ENTRY org.eclipse.core.resources 4 273 2021-10-07 16:35:34.262
+!MESSAGE Problems cleaning up history store.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Could not read metadata for 'E:\New folder\.metadata\.plugins\org.eclipse.core.resources\.projects\Employee\.indexes\af\history.index'. Unexpected version: 0.
+	at org.eclipse.core.internal.localstore.Bucket.load(Bucket.java:304)
+	at org.eclipse.core.internal.localstore.Bucket.load(Bucket.java:275)
+	at org.eclipse.core.internal.localstore.BucketTree.internalAccept(BucketTree.java:98)
+	at org.eclipse.core.internal.localstore.BucketTree.internalAccept(BucketTree.java:109)
+	at org.eclipse.core.internal.localstore.BucketTree.accept(BucketTree.java:73)
+	at org.eclipse.core.internal.localstore.HistoryStore2.clean(HistoryStore2.java:165)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1213)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2283)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:526)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2021-10-07 16:35:34.262
+!MESSAGE Could not read metadata for 'E:\New folder\.metadata\.plugins\org.eclipse.core.resources\.projects\Employee\.indexes\af\history.index'. Unexpected version: 0.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 0 2021-10-07 16:35:36.997
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.metadata.repository.compositeRepository
+!STACK 0
+java.lang.IllegalStateException: BundleContext is no longer valid
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.checkValid(BundleContextImpl.java:989)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getServiceReference(BundleContextImpl.java:564)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getServiceReference(BundleContextImpl.java:1016)
+	at org.eclipse.equinox.internal.p2.core.helpers.ServiceHelper.getService(ServiceHelper.java:27)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getSharedPreferences(AbstractRepositoryManager.java:512)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreRepositories(AbstractRepositoryManager.java:1016)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getRepositoryProperty(AbstractRepositoryManager.java:564)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:234)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor70.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor70.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 0 2021-10-07 16:35:37.003
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.metadata.repository.compositeRepository
+!STACK 0
+org.eclipse.oomph.util.ReflectUtil$ReflectionException: java.lang.NullPointerException
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:132)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor70.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.findMatchingRepositoryExtensions(AbstractRepositoryManager.java:404)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:763)
+	at sun.reflect.GeneratedMethodAccessor70.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	... 22 more
+
+!ENTRY org.eclipse.equinox.p2.updatechecker 4 0 2021-10-07 16:35:37.010
+!MESSAGE Exception in update check thread
+!STACK 0
+org.eclipse.oomph.util.ReflectUtil$ReflectionException: java.lang.NullPointerException
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:132)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.findMatchingRepositoryExtensions(AbstractRepositoryManager.java:404)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:763)
+	at sun.reflect.GeneratedMethodAccessor70.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	... 8 more
